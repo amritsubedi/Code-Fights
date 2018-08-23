@@ -9,47 +9,46 @@ class Conversion {
     print();
     pick = input.nextInt();
     while(pick!=0){
-      if (pick == 1) {
+      if (pick < 0 || pick > 6) {
+        System.out.println("Enter a valid number from 0-6.");
+      }
+      
+      else if (pick == 1) {
       	System.out.println("Enter pounds: ");
       	double pounds = input.nextDouble();
       	PoundsToKg(pounds);
       }
       
-      if (pick==2) {
+      else if (pick==2) {
         System.out.println("Enter Kgs: ");
         double kg = input.nextDouble();
         KgToPounds(kg);
       }
       
-      if (pick == 3) {
+      else if (pick == 3) {
         System.out.println("Enter feet: ");
         double feet = input.nextDouble();
         FeetToMeters(feet);
       }
       
-      if (pick == 4) {
+      else if (pick == 4) {
         System.out.println("Enter meters: ");
         double meters = input.nextDouble();
         MetersToFeet(meters);
       }
       
-      if (pick == 5) {
+      else if (pick == 5) {
         System.out.println("Enter temperature in Celsius: ");
         double celsius = input.nextDouble();
         CelsiusToFahrenheit(celsius);
       }
       
-      if (pick == 6) {
+      else if (pick == 6) {
         System.out.println("Enter temperature in Fahrenheit: ");
         double fahrenheit = input.nextDouble();
         FahrenheitToCelsius(fahrenheit);
       }
-      
-      if (pick < 0 || pick > 6) {
-        System.out.println("Enter a valid number from 0-6.");
-      }
-      
-      
+            
       print();
       pick = input.nextInt();
     }
@@ -59,10 +58,13 @@ class Conversion {
   
   public static void print(){
     System.out.println("Pick Conversion");
-    for (int n=1; n<7; n++){
-      System.out.println(n);
-    }
-    System.out.println(0);
+    System.out.println("(1) Pounds to Kilogram");
+    System.out.println("(2) Kilograms to Pounds");
+    System.out.println("(3) Feet to Meters");
+    System.out.println("(4) Meters to Feet");
+    System.out.println("(5) Celsius to Fahrenheit");
+    System.out.println("(6) Fahrenheit to Celsius");   
+    System.out.println("(0) Exit the program");
   }
   
   public static void PoundsToKg(double pounds){
