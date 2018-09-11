@@ -1,0 +1,25 @@
+/*
+    Using the Java language, have the function LongestWord(sen) take the sen parameter
+    being passed and return the largest word in the string. If there are two or more 
+    words that are the same length, return the first word from the string with that length. 
+*/
+
+public static String LongestWord(String sen) { 
+  
+    // Split the sentence into words.
+    String[] word = sen.split(" ");
+    
+    // Set sen to empty string.
+    sen = "";
+    
+    // Iterate through the words to find the longest word.
+    for ( int i = 0; i < word.length; i++ ) {
+        if ( word[i].length() > sen.length() ) {
+            sen = word[i];
+        }
+    }
+      
+    // return the word.  
+    return sen;
+    
+} 
