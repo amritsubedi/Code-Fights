@@ -1,4 +1,4 @@
-/***************** 
+/*
 
 Given two strings, find the number of common characters between them.
 
@@ -9,7 +9,7 @@ commonCharacterCount(s1, s2) = 3.
 
 Strings have 3 common characters - 2 "a"s and 1 "c".
 
-*****************/
+*/
 
 
 function commonCharacterCount(s1, s2) {
