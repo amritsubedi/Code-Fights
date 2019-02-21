@@ -1,4 +1,4 @@
-/******************
+/*
 
 Two two-dimensional arrays are isomorphic if they have the same number of rows and each pair of respective rows contains the same number of elements.
 
@@ -27,7 +27,7 @@ array2 = [[2]]
 the output should be
 areIsomorphic(array1, array2) = false. 
 
-****************/
+*/
 
 
 function areIsomorphic(array1, array2) {
