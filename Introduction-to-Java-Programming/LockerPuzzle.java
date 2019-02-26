@@ -22,11 +22,7 @@ public class LockerPuzzle {
 		while (studentRoll != 100) {
 			for (int i = 0; i < isOpen.length; i++) {
 				if ((i+1) % studentRoll == 0) {
-					if (isOpen[i] == true) {
-						isOpen[i] = false;
-					} else {
-						isOpen[i] = true;
-					}
+					isOpen[i] = !isOpen[i];
 				} else {
 					continue;
 				}
