@@ -39,6 +39,6 @@ id	scholarship
 CREATE PROCEDURE monthlyScholarships()
 BEGIN
 	UPDATE scholarships
-    SET scholarship = scholarship / 12;
-    SELECT * FROM scholarships;
+    	SET scholarship = scholarship / 12;
+    	SELECT * FROM scholarships;
 END
